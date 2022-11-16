@@ -12,9 +12,9 @@
 </body>
 <script>
     let n = [2,3,6,8,13,14,19,21,23];
-    let count = 0;
+    let total = 0;
     for(let i = 0;i<n.length;i++){
-        if(n[i]>2){
+        if(n[i]>=2){
             var flag = true;
             for(let j = 2;j<n[i]-1;j++){
                 if(n[i]%j == 0){
@@ -23,9 +23,9 @@
             }
         }
         if(flag==true){
-            count++;
+            total+=n[i];
         }
     }
-    document.write("Số lượng số nguyên tố trong mảng n là: " + count);
+    document.write("Số lượng số nguyên tố trong mảng n là: " + total);
 </script>
 </html>
