@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 2</title>
+</head>
+<body>
+<label for="a">Nhập a:</label>
+<input type="text" id="a">
+<button onclick="add()">Thêm a</button>
+<p id="result"></p>
+</body>
+<script>
+    let result = document.getElementById("result");
+    let array = new Array();
+    let a = document.getElementById("a");
+    let count = 0;
+    function add(){
+        array[array.length] = a.value;
+        result.innerHTML = "số lượng phần tử a là: "+(count+=1);
+    }
+
+
+
+
+</script>
+</html>

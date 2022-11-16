@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let total = 0;
+    for(let n = 0;n<500;n++){
+            if(n>2){
+                var flag = true;
+                for(let j = 2;j<n-1;j++){
+                    if(n%j == 0){
+                        flag = false
+                    }
+                }
+            }
+            if(flag==true){
+                document.write(n + "<br>");
+                total += n;
+            }
+    }
+    document.write("Số lượng số nguyên tố trong mảng n là: " + total);
+
+</script>
+</html>
